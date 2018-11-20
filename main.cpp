@@ -1,19 +1,12 @@
 #include <iostream>
 #include <cwchar>
-#include <windows.h>
+#include <WINDOWS.h>
 using namespace std;
 
 int main()
 {
-CONSOLE_FONT_INFOEX cfi;
-cfi.cbSize = sizeof(cfi);
-cfi.nFont = 0;
-cfi.dwFontSize.X = 0;                   // Width of each character in the font
-cfi.dwFontSize.Y = 24;                  // Height
-cfi.FontFamily = FF_DONTCARE;
-cfi.FontWeight = FW_NORMAL;
-std::wcscpy(cfi.FaceName, L"Consolas"); // Choose your font
-SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
+
+
 
 std::cout << "Font: Consolas, Size: 24\n";
 char a;
