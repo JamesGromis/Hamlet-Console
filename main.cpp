@@ -7,8 +7,6 @@ int main()
 {
 
 
-
-std::cout << "Font: Consolas, Size: 24\n";
 char a;
 int b;
 cout<< "Hamlet. exe:   A c++ mapped, console version of Hamlet. \n";
